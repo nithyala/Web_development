@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryDM</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://use.fontawesome.com/4337662214.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    
+    <header>
+       <nav> 
+           <a href="laundry.html"><img src="image/logoo.jpeg"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="laundry.html">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">LOGIN/REGISTER</a></li>
+                  
+                  <li><a href="">CONTACT US: 44484746454</a></li>
+                  
+                 
+              </ul>
+              
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+           
+       </nav>
+    </header>
+   <div class="account-page">
+     <div class="container">
+         <div class="row">
+             <div class="col-2">
+                 <img src="image/login.jpeg" width="40%" left="20%">
+             </div>
+             <div class="col-2">
+                 <div class="form-container">
+                     <div class="form-btn">
+                         <span onclick="login()">Login</span>
+                         <span onclick="register()">Register</span>
+                         <hr id="Indicator">
+                     </div>
+                <form id="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot password</a>
+                
+                </form>
+                <form id="RegForm" >
+                    <input type="text" placeholder="Username">
+                    <input type="phonenumber" placeholder="Phone Number">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                   
+                
+                </form>
+
+
+           </div>
+             </div>
+         </div>  
+     </div>
+   </div> 
+        
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<script> 
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+       function register(){
+           RegForm.style.transform = "translateX(0px)";
+           LoginForm.style.transform = "translateX(0px)";
+           Indicator.style.transform = "translateX(100px)";
+           
+        }
+        function login(){
+           RegForm.style.transform = "translateX(300px)";
+           LoginForm.style.transform = "translateX(300px)";
+           Indicator.style.transform = "translateX(0px)";
+
+           
+        }
+
+
+</script>
+</body>
+
+</html>

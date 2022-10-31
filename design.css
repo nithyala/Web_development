@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+      color: brown;
+      text-decoration: none;
+      font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    margin: 5px auto;
+    width: 20%;
+    background-image: linear-gradient(rgba(4, 29, 30, 0.7), rgba(4, 24, 30, 0.7)), url(image/laun1.jfif);
+    background-position: center;
+    border-radius: 4px;
+    background-size: cover;
+    padding: 50px 0;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ 
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+.hero-btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: brown;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+     .account-page .container .row .col-2 img{
+        height: 30%;
+        width: 80%;
+        position: absolute;
+        top: 17%;
+
+        
+      }
+
+      .account-page .container .row .col-2 .form-container{
+        background: #fff;
+        width: 300px;
+        height: 277px;
+        position: absolute;
+        text-align: center;
+        padding: 30px 0;
+        margin: auto;
+        box-shadow: 0 0 20px 0px;
+        left: 10%;
+        top: 57%;
+        overflow: hidden;
+
+        
+    }
+  
+   .account-page .container .row .col-2 .form-container span{
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0 20px;
+        color: #555;
+        cursor: pointer;
+        width: 40px;
+        display: inline-block;
+      
+    }
+    .form-btn{
+        display: inline-block;
+  
+    }
+    .account-page .container .row .col-2 .form-container .form-btn .form-container form{
+        max-width: 50px;
+       
+        padding: 0 5px;
+        position: absolute;
+        top: 2%;
+        transition: transform 1s;
+  
+  
+    }
+    .account-page .container .row .col-2 .form-container .form-btn form input{
+        width: 5%;
+        top: 2%;
+        position: absolute;
+       
+       
+        border: 1px solid #ccc;
+        
+      
+  
+    }
+    #LoginForm{
+        top: 25%;
+        right: 115%;
+        width: 5%;
+    
+    }
+    #RegForm{
+        top: 18%;
+        left: 0;
+        
+    }
+    form a{
+        font-size: 2px;
+        color: #333;
+    }
+    
+    .login .account-page .container .row .col-2 img{
+        
+        position: absolute;
+        top: 1%;
+       
+        max-height: 30vh;
+      
+        padding: 0 10px;
+        
+        
+        
+      }
+
+     .login .account-page .container .row .col-2 .form-container{
+        background: #fff;
+        width: 250px;
+        height: 277px;
+        position: absolute;
+        text-align: center;
+        padding: 30px 0;
+        margin: auto;
+        box-shadow: 0 0 20px 0px;
+        left: 13%;
+        top: 40%;
+        overflow: hidden;
+
+        
+    }
+    .login   #LoginForm{
+        top: 25%;
+        right: 125%;
+        width: 100%;
+        
+    
+    }
+    
+    .work{
+        width: 10%;
+        
+    }
+    .work-col img{
+        width: 30%;
+        
+    }
+    .work-col h3{
+        font-size: 7px;
+    }
+    .work-col p{
+        font-size: 7px;
+    }
+    .work-col-1 img{
+        width: 30%;
+        padding: 10px;
+        padding-left: 15px;
+       
+    }
+    .work-col-1 h3{
+        font-size: 6px;
+        padding-left: 15px;
+    }
+    .work-col-1 p{
+        font-size: 6px;
+        padding-left: 15px;
+    }
+    .work-col-2 img{
+        width: 30%;
+        padding: 2px;
+        padding-left: 48px;
+       
+    }
+    .work-col-2 h3{
+        font-size: 5px;
+        padding-left: 48px;
+    }
+    .work-col-2 p{
+        font-size: 5px;
+        padding-left: 48px;
+    }
+    
+    .work-col-3 img{
+        width: 30%;
+        padding: 5px;
+         padding-left: 75px;
+        
+        
+       
+    }
+    .work-col-3 h3{
+        font-size: 6px;
+        padding-left: 75px;
+    }
+    .work-col-3 p{
+        font-size: 6px;
+        padding-left: 75px;
+    }
+    
+    
+      
+    
+}
+
+
+.work{
+    width: 90%;
+    color: brown;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.row .work-col{
+    width: 50%;
+    color: brown;
+    position: absolute;
+    top: 120%;
+    bottom: 20%;
+    left: 10%;
+    transform: translate(-40%,-40%);
+    text-align: center;
+}
+.row .work-col-1{
+    width: 50%;
+    color: brown;
+    position: absolute;
+    top: 105%;
+    bottom: 5%;
+    left: 35%;
+    transform: translate(-40%,-40%);
+    text-align: center;
+}
+.row .work-col-2{
+    width: 50%;
+    color: brown;
+    position: absolute;
+    top: 100%;
+    bottom: 25%;
+    left: 55%;
+    transform: translate(-40%,-40%);
+    text-align: center;
+}
+.row .work-col-3{
+    width: 50%;
+    color: brown;
+    position: absolute;
+    top: 100%;
+    bottom: 25%;
+    left: 75%;
+    transform: translate(-40%,-40%);
+    text-align: center;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5.5rem;
+    min-height: 60vh;
+    align-items: center;
+   
+   
+    padding: 30px 0;
+    margin: 15px auto;
+    width: 90%;
+   
+    
+    
+   
+   
+    
+  }
+  
+  .home .content{
+    flex:1 1 40rem;
+    padding-top: 6.5rem;
+    text-align: center;
+    background: linear-gradient(#fff,#ffd6d6);
+    
+    border-radius: 20px;
+  }
+  
+  .home .content h3{
+    font-size: 5rem;
+    color:#333;
+  }
+  
+  .home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  body{
+    background:#f7f7f7;
+  }
+  
+  section{
+    padding:2rem 9%;
+  }
+  *::selection{
+    background:var(--brown);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  
+  .account-page{
+      padding: 300px 0;
+      background: radial-gradient(#fff);
+      width: 100%;
+  }
+  .row .col-2 img{
+      left: 10%;
+      position: absolute;
+      top: 30%;
+  }
+
+  .form-container{
+      background: #fff;
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      text-align: center;
+      padding: 30px 0;
+      margin: auto;
+      box-shadow: 0 0 20px 0px;
+      left: 60%;
+      bottom: 10%;
+      overflow: hidden;
+      
+  }
+
+  .form-container span{
+      font-weight: bold;
+      font-size: 14px;
+      padding: 0 20px;
+      color: #555;
+      cursor: pointer;
+      width: 40px;
+      display: inline-block;
+    
+  }
+  .form-btn{
+      display: inline-block;
+
+  }
+  .form-container form{
+      max-width: 200px;
+     
+      padding: 0 20px;
+      position: absolute;
+      top: 130px;
+      transition: transform 1s;
+
+
+  }
+  
+
+ 
+  form input{
+      width: 100%;
+      height: 50px;
+      margin: 10px 0;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      
+    
+
+  }
+  
+ 
+form .btn{
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      margin: 10px 0;
+
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    right: 115%;
+    width: 100%;
+
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 16px;
+    color: #333;
+}
+#Indicator{
+    width: 35%;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 4px;
+    transform: translateX(100px); 
+    transition: transform 1s;
+
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #f44336;
+    background: #f44336;
+
+}
+
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #f44336;
+    background: #f44336;
+
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    }
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    min-height: 70vh;
+    align-items: center; 
+    width: 100%;
+    position: absolute;
+    padding: 30px 0;
+    margin: 10px auto;
+    
+   
+}
+ 
+
+  
+  .login .account-page .container .row .col-2 img{
+    height: 50%;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 2rem;
+    left: 15%;
+    position: absolute;
+  }
+
+  .login .account-page{
+    border-radius: 8rem;
+    width: 90%;
+    left: 5%;
+    
+    position: absolute;
+  }

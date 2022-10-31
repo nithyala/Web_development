@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryDM</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://use.fontawesome.com/4337662214.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    
+    <header>
+       <nav> 
+           <a href="laundry.html"><img src="image/logoo.jpeg"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="login_signup.html">LOGIN/REGISTER</a></li>
+                  
+                  <li><a href="">CONTACT US: 44484746454</a></li>
+                  
+                 
+              </ul>
+              
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+           
+       </nav>
+    </header>
+<!----home page-->
+
+    <section class="home" id="home">
+        <div class="text-box">
+            <h1>DHOBI-MAN</h1>
+            <p><br>Making Laundry Is Now Easy</br>
+            </p>
+            <button  class="hero-btn"><a href="">Visit us to know more</a></button>
+            
+        </div>
+    
+         <div class="work">
+           <h1>How Do We Work </h1>
+          <div class="row">
+               <div class="work-col">
+                   <img src="image/step1basket.jpg">
+                   <h3>STEP 1</h3>
+                   <p>Bag all your dirty clothes</p>
+               </div>
+               <div class="work-col-1">
+                   <img src="image/step2delivery.jpg" width="15%">
+                   <h3>STEP 2</h3>
+                   <p>We pick up your clothes</p>
+               </div>
+               <div class="work-col-2">
+                   <img src="image/step3notification.jpg">
+                   <h3>STEP 3</h3>
+                   <p>When your order is ready <br>conformation message is sent</br></p>
+               </div>
+               <div class="work-col-3">
+                   <img src="image/step4.1.jpg">
+                   <h3>STEP 4</h3>
+                   <p>We deliver clean <br>and folded clothes</br></p>
+               </div>
+       
+           </div>
+    
+        </div>
+    
+    
+    
+      
+    </section>
+    
+    <section class="home" id="home">
+        
+       <!---<div class="image">
+        <img class="image" src="image/laun1.jfif">
+       </div>-->
+
+
+        <div class="content">
+            
+            <h3>About Us</h3>
+            <p>We deliver all over the country</p>
+            <!--<a href="#" class="btn">order now</a>-->
+        </div>
+    
+        </section>
+
+        <section class="login" id="login">
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="image/login.jpeg" width="40%" left="20%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="Indicator">
+                            </div>
+                       <form id="LoginForm">
+                           <input type="text" placeholder="Username">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Login</button>
+                           <a href="">Forgot password</a>
+                       
+                       </form>
+                       <form id="RegForm" >
+                           <input type="text" placeholder="Username">
+                           <input type="phonenumber" placeholder="Phone Number">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Register</button>
+                          
+                       
+                       </form>
+       
+       
+                  </div>
+                    </div>
+                </div>  
+            </div>
+          </div> 
+        </section>       
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<script> 
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+           function register(){
+               RegForm.style.transform = "translateX(0px)";
+               LoginForm.style.transform = "translateX(0px)";
+               Indicator.style.transform = "translateX(100px)";
+               
+            }
+            function login(){
+               RegForm.style.transform = "translateX(300px)";
+               LoginForm.style.transform = "translateX(300px)";
+               Indicator.style.transform = "translateX(0px)";
+    
+               
+            }
+    
+    
+    </script>
+
+</body>
+
+</html>
